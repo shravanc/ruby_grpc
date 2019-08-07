@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service ListService {
+
+        rpc GetLists(List) returns(List) {}
+
+}
+
+message List {
+  string title = 1;
+}

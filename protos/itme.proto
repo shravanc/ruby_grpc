@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service ItemService {
+
+        rpc GetItems(Item) returns(Item) {}
+
+}
+
+message Item {
+        string title = 1;
+}
